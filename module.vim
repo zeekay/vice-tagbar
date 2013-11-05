@@ -38,3 +38,5 @@ if executable('jsctags')
         \ 'ctagsbin' : 'jsctags'
     \ }
 endif
+
+let g:tagbar_iconchars = ['▸', '▾']
