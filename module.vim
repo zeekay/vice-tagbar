@@ -4,6 +4,7 @@ call vice#Extend({
 \ })
 
 let g:tagbar_compact = 1
+let g:tagbar_singleclick = 1
 nnoremap <leader>t :TagbarToggle<cr>
 
 " if executable('coffeetags')
