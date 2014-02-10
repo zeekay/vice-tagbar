@@ -1,6 +1,5 @@
 call vice#Extend({
-    \ 'addons': ['github:majutsushi/tagbar'],
-    \ 'ft_addons': {'php': ['github:techlivezheng/tagbar-phpctags']}
+    \ 'addons': ['github:majutsushi/tagbar']
 \ })
 
 let g:tagbar_compact = 1
