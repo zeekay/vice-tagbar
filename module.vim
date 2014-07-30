@@ -2,6 +2,16 @@ call vice#Extend({
     \ 'addons': ['github:majutsushi/tagbar']
 \ })
 
+" Global setting, can muck with other things
+if !exists('g:vice.tagbar.updatetime')
+    let g:vice.tagbar = {'updatetime': 500}
+elseif g:vice.tagbar.updatetime < 100
+    " Prevent settings below 100
+    let g:vice.tagbar.updatetime = &updatetime
+endif
+
+exe 'set updatetime='.g:vice.tagbar.updatetime
+
 let g:tagbar_compact     = 1
 let g:tagbar_iconchars   = ['▸', '▾']
 let g:tagbar_singleclick = 1
